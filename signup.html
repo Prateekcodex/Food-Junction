@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <title>signup</title>
+    <link rel="stylesheet" href="/sign.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class='bx bx-user'></i>
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="input-field">
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <p>Forgot password <a href="#">Click here!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign Up</button>
+                    <button type="button" id="loginBtn" class="disable">Login</button>
+                    <button type="button" id="signupBtn" onclick="redirectToAdmin()">Admin Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <script>
+        function redirectToAdmin(){
+            window.location.href = "admin.html";
+        }
+
+        let signupBtn = document.getElementById("signupBtn");
+        let loginBtn = document.getElementById("loginBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+
+        loginBtn.onclick = function(){
+            nameField.style.maxHeight = "0";
+            title.innerHTML = "Login";
+            signupBtn.classList.add("disable");
+            loginBtn.classList.remove("disable");
+        }
+
+        signupBtn.onclick = function(){
+            nameField.style.maxHeight = "60px";
+            title.innerHTML = "Sign Up";
+            signupBtn.classList.remove("disable");
+            loginBtn.classList.add("disable");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- <script>
+        function showAlert() {
+            alert("You have booked a table successfully. Thanks!");
+        }
+
+
+        
+        // let url='https://script.google.com/macros/s/AKfycbw_R9-B5CXUjOLDxqJJUdqwPtGDMxske-B5zoiMfsdc3CLrJkYyJmSpD4t_Ipr9ywyMyQ/exec'
+        // let form=document.querySelector('#form');
+        // form.addEventListener("book table",(e)=> {
+        //     let data = new FormData(form);
+        //     fetch(url,{
+        //         method:"POST",
+        //         body:data
+        //     }).then((res)=>res.text())
+        //     .then((finalRes)=>console.log(finalRes))
+        //     e.preventDefault();
+        // })
+    </script> -->
+
+</head>
+    <body>
+        
+        <section class = "banner">
+            <h2>BOOK YOUR TABLE NOW</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                    <!-- image here -->
+                     <!-- <img src="./assets/images/card-img.jpg" width="50" height="50" alt="image"> -->
+                </div>
+
+                <div class = "card-content">
+                    <h3>Reservation</h3>
+                    <form method="post" id="form">
+                        <div class = "form-row">
+                            <input type = "date" placeholder="Select Date" name="date" required>
+                            <!-- <select title = "days" name="days" required>
+                                <option value = "day-select">Select Day</option>
+                                <option value = "sunday">Sunday</option>
+                                <option value = "monday">Monday</option>
+                                <option value = "tuesday">Tuesday</option>
+                                <option value = "wednesday">Wednesday</option>
+                                <option value = "thursday">Thursday</option>
+                                <option value = "friday">Friday</option>
+                                <option value = "saturday">Saturday</option>
+                            </select> -->
+                            
+                            <select title="Choose your table" required>
+                                <option value="number">Select Table</option>
+                                <option value="T-1">T-1</option>
+                                <!-- <option value="T-2">T-2</option> -->
+                                <option value="T-3">T-3</option>
+                                <option value="T-4">T-4</option>
+                                <!-- <option value="T-5">T-5</option> -->
+                                <option value="T-6">T-6</option>
+                                <option value="T-7">T-7</option>
+                            </select>
+                            
+                        </div>
+                        
+                        <div class = "form-row">
+                            <input type = "text" placeholder="Full Name" name="name" required>
+                            <input type = "text" placeholder="Phone Number" name="phone" required>
+                        </div>
+                        
+                        
+                        <div class = "form-row">
+                            <input type = "number" placeholder="How Many Persons?" min = "1" name="person" required>
+                            <!-- <input type = "submit" value = "BOOK TABLE" onclick="redirectToThankYou()" name="btn"> -->
+                            <input type="submit" value="BOOK TABLE" onclick="redirectToPayment()" name="btn">
+
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+       <script src="script.js"></script>
+          
+        
+    </body>
+</html>
+
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="order.css"> -->
+
+    <script>
+        function showAlert() {
+            alert("Your order has been placed successfully. Thanks!");
+        }
+    </script>
+
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/images/banner-img.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+.card-img{
+    background: url("./assets/images/nuggets.jpg") center/cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-content{
+    background: #fff;
+    height: 350px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: black;
+}
+form input[type = submit]{
+    color: #fff;
+    background: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}
+    </style>
+
+
+
+
+</head>
+    <body>
+        
+        <section class = "banner">
+            <h2>CROWN NUGGETS</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                    <!-- image here -->
+                     <!-- <img src="./assets/images/card-img.jpg" width="100" height="100" alt="image"> -->
+                </div>
+
+                <div class = "card-content">
+                    <h3>Order Your Nuggets</h3>
+                    <form>
+                        <div class = "form-row">
+                            
+                            <select title = "Nuggets" required>
+                                <option value = "select">Nuggets Types</option>
+                                <option value = "Classic Burger">Classic Chicken Nuggets</option>
+                                <option value = "Cheese Lover's Burger">Spicy Chicken Nuggets</option>
+                                <option value = "Chicken Burger">CGrilled Chicken Nuggets</option>
+                                <option value = "Vegetarian Burger">BBQ Chicken Nuggets</option>
+                                <option value = "BBQ Bacon Burger">Nuggets Combo Box</option>
+                            </select>
+
+                            <select title = "dipping Sauce" required>
+                                <option value = "Patty Choices">Dipping Sauce</option>
+                                <option value = "Chicken">Blue Cheese</option>
+                                <option value = "Lamb">Garlic Butter Dip</option>
+                                <option value = "Vegan">Sour Sauce</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <select title = "salad" required>
+                                <option value = "Sauce Options">Salad Options</option>
+                                <option value = "Spicy Mayo">Fries</option>
+                                <option value = "Garlic Aioli">Onion rings</option>
+                                <option value = "Ketchup/Mustard">Side salad</option>
+                            </select>
+
+                            <select title = "Serving" required>
+                                <option value = "Choices">Serving</option>
+                                <option value = "Classic Brioche">Ketchup</option>
+                                <option value = "Sesame Seed Bun">Honey Mustard</option>
+                                <option value = "Whole Wheat">Garlic Aioli</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <select title = "Spice Level" required>
+                                <option value = "Spice Level">Spice Level</option>
+                                <option value = "Mild">Mild</option>
+                                <option value = "Medium">Medium</option>
+                                <option value = "Extra Hot">Extra Hot</option>
+                            </select>
+
+                            <input type = "submit" value = "ORDER NOW" onclick="redirectToPayment()">
+                        </div>
+
+                        
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        
+    </body>
+</html>

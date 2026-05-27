@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="order.css">
+    <script>
+        // function showAlert() {
+        //     alert("Your order has been placed successfully. Thanks!");
+        // }
+
+        function redirectToPayment(){
+            window.location.href = "payment.html"
+        }
+    </script>
+
+
+
+</head>
+    <body>
+        
+        <section class = "banner">
+            <h2>Pizza Hut</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                    <!-- image here -->
+                     <!-- <img src="./assets/images/pizza.jpg" width="100%" height="100%" alt="image"> -->
+                </div>
+
+                <div class = "card-content">
+                    <h3>Order Your Pizza</h3>
+                    <form>
+                        <div class = "form-row">
+                            
+                            <select title = "pizza" required>
+                                <option value = "select">Pizza Base Choice</option>
+                                <option value = "Classic Hand-Tossed">Classic Hand-Tossed</option>
+                                <option value = "Thin Crust">Thin Crust</option>
+                                <option value = "Cheese Burst">Cheese Burst</option>
+                                <option value = "Whole Wheat Base">Whole Wheat Base</option>
+                            </select>
+
+                            <select title = "size" required>
+                                <option value = "Size Options">Size Options</option>
+                                <option value = "Personal">Personal (6-inch)</option>
+                                <option value = "Medium">Medium (8-inch)</option>
+                                <option value = "Large">Large (12-inch)</option>
+                                <option value = "Family">Family (16-inch)</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <select title = "souce" required>
+                                <option value = "Sauce Options">Sauce Options</option>
+                                <option value = "Classic Tomato">Classic Tomato</option>
+                                <option value = "Pesto">Pesto</option>
+                                <option value = "Alfredo (White Sauce)">Alfredo (White Sauce)</option>
+                                <option value = "Spicy Marinara">Spicy Marinara</option>
+                            </select>
+
+                            <select title = "Cheese" required>
+                                <option value = "cheese">Cheese Selection</option>
+                                <option value = "Mozzarella">Mozzarella</option>
+                                <option value = "Cheddar">Cheddar</option>
+                                <option value = "Parmesan">Parmesan</option>
+                                <option value = "Vegan Cheese">Vegan Cheese</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <select title = "Topping" required>
+                                <option value = "Topping">Toppings</option>
+                                <option value = "Pepperoni">Pepperoni</option>
+                                <option value = "Bell Peppers">Bell Peppers</option>
+                                <option value = "Grilled Chicken">Grilled Chicken</option>
+                                <option value = "Truffle Oil">Truffle Oil</option>
+                            </select>
+
+                            <select title = "Add-On Option" required>
+                                <option value = "Add-On Option">Add-On Option</option>
+                                <option value = "Extra Cheese">Extra Cheese</option>
+                                <option value = "Extra Meat">Extra Meat</option>
+                                <option value = "Gluten-Free Dough">Gluten-Free Dough</option>
+                            </select>
+
+                        </div>
+
+                        <div class="form-row">
+                            <select title = "Spice Level" required>
+                                <option value = "Spice Level">Spice Level</option>
+                                <option value = "Mild">Mild</option>
+                                <option value = "Medium">Medium</option>
+                                <option value = "Spicy">Spicy</option>
+                            </select>
+
+                            <input type = "submit" value = "ORDER NOW" onclick="redirectToPayment()" >
+                           
+                        </div>
+
+                        
+
+                    </form>
+                </div>
+            </div>
+        </section>
+       
+      
+    </body>
+</html>

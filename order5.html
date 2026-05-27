@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="order.css">
+
+    <script>
+        function showAlert() {
+            alert("Your order has been placed successfully. Thanks!");
+        }
+    </script>
+
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/images/banner-img.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+.card-img{
+    background: url("./assets/images/Chicken-Burrito.jpg") center/cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-content{
+    background: #fff;
+    height: 350px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: black;
+}
+form input[type = submit]{
+    color: #fff;
+    background: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}
+</style>
+
+
+
+
+</head>
+    <body>
+        
+        <section class = "banner">
+            <h2>BURRITO PALACE</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                    <!-- image here -->
+                     <!-- <img src="./assets/images/card-img.jpg" width="100" height="100" alt="image"> -->
+                </div>
+
+                <div class = "card-content">
+                    <h3>Order Your Burrito</h3>
+                    <form>
+                        <div class = "form-row">
+                            
+                            <select title = "Burrito" required>
+                                <option value = "select">Burrito Types</option>
+                                <option value = "Classic Burrito">Classic Burrito</option>
+                                <option value = "Cheese Lover's Burger">Chicken Fajita Burrito</option>
+                                <option value = "Chicken Burger">Spicy Burrito</option>
+                                <option value = "Vegetarian Burger">Surf & Turf Burrito</option>
+                                <option value = "Carnitas Burrito">Carnitas Burrito</option>
+                            </select>
+
+                            <select title = "Meat Choices" required>
+                                <option value = "Meat Choices">Meat Options</option>
+                                <option value = "Chicken">Chicken</option>
+                                <option value = "Lamb">Pork</option>
+                                <option value = "Vegan">Vegetarian</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <select title = "souce" required>
+                                <option value = "Sauce Options">Sauce Options</option>
+                                <option value = "Spicy Mayo">Chipotle Sauce</option>
+                                <option value = "Garlic Aioli">Salsa Verde</option>
+                                <option value = "Ketchup/Mustard">Garlic Aioli</option>
+                            </select>
+
+                            <select title = "Extras" required>
+                                <option value = "Bun Choices">Extras</option>
+                                <option value = "Classic Brioche">Corn</option>
+                                <option value = "Sesame Seed Bun">Jalapeños</option>
+                                <option value = "Whole Wheat">BBQ Sauce</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <select title = "Topping" required>
+                                <option value = "Topping">Toppings</option>
+                                <option value = "Cheese">Cheese</option>
+                                <option value = "Lettuce">Lettuce</option>
+                                <option value = "Avocado">Salsa</option>
+                                <option value = "Pickles">Sour Cream</option>
+                            </select>
+
+                            <select title = "Add-On Option" required>
+                                <option value = "Add-On Option">Add-On Option</option>
+                                <option value = "Extra Cheese">Avacado</option>
+                                <option value = "Extra Meat">Salsa</option>
+                                <option value = "Gluten-Free Dough">Hot Sauce</option>
+                            </select>
+
+                        </div>
+
+                        <div class="form-row">
+                            <select title = "Spice Level" required>
+                                <option value = "Spice Level">Spice Level</option>
+                                <option value = "Mild">Mild</option>
+                                <option value = "Medium">Medium</option>
+                                <option value = "Extra Hot">Extra Hot</option>
+                            </select>
+
+                            <input type = "submit" value = "ORDER NOW" onclick="redirectToPayment()">
+                        </div>
+
+                        
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        
+    </body>
+</html>
