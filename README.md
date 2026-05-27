@@ -13,9 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="[food-junction-9r3an5r3o-prateek-pros-projects.vercel.app](https://food-junction-cg1b1xjyb-prateek-pros-projects.vercel.app/)">
-    <img src="https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=vercel">
-  </a>
+  🔗 <a href="[https://your-live-demo-link.com](https://food-junction-cg1b1xjyb-prateek-pros-projects.vercel.app/)">Live Demo</a>
 </p>
 
 
