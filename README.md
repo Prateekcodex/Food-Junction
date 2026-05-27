@@ -11,14 +11,10 @@
   <img src="https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=css3">
   <img src="https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript">
 </p>
-
 <p align="center">
-  🔗 [**Live Demo**](https://vercel.com/prateek-pros-projects?repo=https%3A%2F%2Fgithub.com%2FPrateekcodex%2FFood-Junction)
-</div>
-</p>
-
-<p align="center">
-  🔗 <a href="[https://your-live-demo-link.com](https://food-junction-cg1b1xjyb-prateek-pros-projects.vercel.app/)">Live Demo</a>
+  <a href="https://food-junction-cg1b1xjyb-prateek-pros-projects.vercel.app/">
+    <img src="https://img.shields.io/badge/Live%20Demo-Visit-blue?style=for-the-badge&logo=vercel">
+  </a>
 </p>
 
 
