@@ -14,7 +14,7 @@
 
 ---
 
-🔗 [**Live Demo**](https://vercel.com/prateek-pros-projects?repo=https%3A%2F%2Fgithub.com%2FPrateekcodex%2FFood-Junction)
+🔗 [**Live Demo**](food-junction-9r3an5r3o-prateek-pros-projects.vercel.app)
 </div>
 
 ---
