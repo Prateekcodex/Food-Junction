@@ -14,7 +14,8 @@
 
 ---
 
-# 🌐 Live Demo
+🔗 [**Live Demo**](https://vercel.com/prateek-pros-projects?repo=https%3A%2F%2Fgithub.com%2FPrateekcodex%2FFood-Junction)
+</div>
 
 ---
 
@@ -42,19 +43,20 @@
 ---
 
 # 🌟 Future Improvements
-Online Food Delivery 🚚
-User Authentication 🔐
-Order Tracking 📦
-Dark Mode 🌙
-Backend Integration ⚙️
-Database Support 🗄️
+
+- Online Food Delivery 🚚
+- User Authentication 🔐
+- Order Tracking 📦
+- Dark Mode 🌙
+- Backend Integration ⚙️
+- Database Support 🗄️
 
 ---
 
 🤝 Contributing
 
 Ways to Contribute
-🐞 Bug Reports
-✨ Feature Requests
-📝 Documentation Improvements
-🔧 Code Contributions
+- 🐞 Bug Reports
+- ✨ Feature Requests
+- 📝 Documentation Improvements
+- 🔧 Code Contributions
